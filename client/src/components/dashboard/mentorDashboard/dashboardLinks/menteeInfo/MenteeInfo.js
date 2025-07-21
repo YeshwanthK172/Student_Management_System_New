@@ -122,10 +122,8 @@ const MenteeInfo = () => {
                         </button>
                     </div>
 
-                    <div className="col-span-2 flex justify-start items-center">
-                        <h5 className="">Address</h5>
-                    </div>
-                    <div className="flex justify-start items-center">
+               
+                    <div className="flex justify-start items-center col-span-2">
                         <h5 className="">Department</h5>
                     </div>
                     <div className="">
@@ -141,12 +139,8 @@ const MenteeInfo = () => {
                             />
                         </button>
                     </div>
-                    <div className="flex justify-start items-center">
-                        <h5 className="">Mobile No.</h5>
-                    </div>
-                    <div className="flex justify-start items-center">
-                        <h5 className="">Actions</h5>
-                    </div>
+                    
+                    
                 </div>
                 <div className="h-4/5 overflow-y-auto pr-2">
                     {mentees.length === 0 ? (

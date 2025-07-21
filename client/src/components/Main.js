@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
 import { Roles } from "../utility";
-import bg from "../assets/images/bg-2.png";
+import bg from "../assets/images/logo.png";
 import { FormControl, FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import ArrowRight from "../assets/icons/ArrowRight";
 
@@ -32,14 +32,7 @@ const Main = () => {
     return (
         <div className="w-full h-screen flex items-center">
             <div className="flex-2 bg-white h-full flex flex-col items-center justify-center">
-                <div className="w-full">
-                    <h1 style={{ fontSize: "70px" }} className="w-full text-center">
-                        <span className="text-blue-500">Welcome</span>, to
-                    </h1>
-                    <h1 style={{ fontSize: "40px" }} className="w-full text-center">
-                        Student Mentoring System
-                    </h1>
-                </div>
+                
                 <img src={bg} alt="" className="w-1/2" />
             </div>
             <div className="flex-grow bg-blue-500 h-full flex flex-col items-center justify-center gap-y-8 text-white">
@@ -92,7 +85,7 @@ const Main = () => {
                                     }}
                                 />
                             }
-                            label="Mentee"
+                            label="Student"
                         />
                     </RadioGroup>
                 </FormControl>

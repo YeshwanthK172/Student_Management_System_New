@@ -3,7 +3,7 @@ import myBg from "../../../../../assets/images/bg-1.png";
 
 const InfoCards = ({ myStyle, total, text, children }) => {
     return (
-        <div className={`${myStyle}`} style={{ backgroundImage: "url(" + myBg + ")" }}>
+        <div className={`${myStyle}`} >
             <div className="mb-4 flex items-center justify-between">
                 <span className="bg-black bg-opacity-30 p-1 rounded-md">{children}</span>
                 <span className=" text-white">

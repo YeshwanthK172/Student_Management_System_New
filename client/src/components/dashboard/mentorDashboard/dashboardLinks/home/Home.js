@@ -54,13 +54,8 @@ const Home = ({ name }) => {
                             <ChatAltIcon alt={true} myStyle={"w-6 h-6 text-white"} />
                         </InfoCards>
                     </div>
-                    <div className="w-full bg-white h-64 rounded-md px-4 py-2">
-                        <ChartData />
-                    </div>
-                    <div className="w-full bg-white h-60 rounded-md overflow-y-auto px-4 py-2">
-                        <h4 className="mb-3">Activities last 7 days</h4>
-                        <RecentActivities />
-                    </div>
+                   
+                    
                 </div>
                 <div className="col-span-2 py-4 flex items-start justify-end h-full">
                     <UpcomingMeetings />

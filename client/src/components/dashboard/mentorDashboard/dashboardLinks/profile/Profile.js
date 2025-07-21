@@ -349,7 +349,7 @@ const Profile = ({ profileData }) => {
                 </CSSTransition>
             )}
             {role === Roles.STUDENT && (
-                <div className="grid grid-cols-12 gap-x-1">
+                <div className=" grid  grid-cols-12 ml-[200px] gap-x-1">
                     <div className="col-span-4 p-2">
                         <div className="w-full shadow-m32 py-6 px-3 rounded-md mb-6 bg-white">
                             <h2 className="mb-5 text-gray-700 flex items-center justify-start">
@@ -412,20 +412,7 @@ const Profile = ({ profileData }) => {
                                         <h4>{profileData?.enrollment_no}</h4>
                                     </div>
                                 </div>
-                                <div className="col-start-4 col-span-3">
-                                    <div className="flex items-start justify-center flex-col mb-4">
-                                        <h4 className="text-gray-400">Programme</h4>
-                                        <h4>{profileData?.programme}</h4>
-                                    </div>
-                                    <div className="flex items-start justify-center flex-col mb-4">
-                                        <h4 className="text-gray-400">Mentored By</h4>
-                                        <h4>{profileData?.mentoredBy?.name}</h4>
-                                    </div>
-                                    <div className="flex items-start justify-center flex-col">
-                                        <h4 className="text-gray-400">Enrollment Year</h4>
-                                        <h4>{profileData?.enrollment_year}</h4>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                         <div className="w-full bg-white shadow-m32 py-5 px-3 rounded-md">
@@ -451,132 +438,7 @@ const Profile = ({ profileData }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-8 p-2">
-                        <div className="w-full bg-white shadow-m32 py-5 px-3 rounded-md mb-6">
-                            <div className="flex items-center justify-between mb-5">
-                                <h2 className="text-gray-700 flex items-center justify-start">
-                                    Personal Information
-                                    <UserGroupIcon alt={false} myStyle={"h-5 w-5 ml-2"} />
-                                </h2>
-                            </div>
-
-                            <div className="grid grid-cols-3">
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">First Name</h4>
-                                    <h4>{profileData?.firstname}</h4>
-                                </div>
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Middle Name</h4>
-                                    <h4>{profileData?.middlename}</h4>
-                                </div>
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Last Name</h4>
-                                    <h4>{profileData?.lastname}</h4>
-                                </div>
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Gender</h4>
-                                    <h4>{profileData?.gender}</h4>
-                                </div>
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Blood Group</h4>
-                                    <h4>{profileData?.blood_group}</h4>
-                                </div>
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Home Place</h4>
-                                    <h4>{profileData?.home_place}</h4>
-                                </div>
-                                <div className="flex col-span-3 items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Hobbies</h4>
-                                    <h4>{profileData?.hobbies}</h4>
-                                </div>
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Guardian Name</h4>
-                                    <h4>{profileData?.guardian_name}</h4>
-                                </div>
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Guardian Ph No.</h4>
-                                    <h4>{profileData?.guardian_ph_no}</h4>
-                                </div>
-                                <div className="flex items-start justify-center flex-col mb-4">
-                                    <h4 className="text-gray-400">Guardian Address</h4>
-                                    <h4>{profileData?.guardian_address}</h4>
-                                </div>
-                                <div className="flex col-span-3 items-start justify-center flex-col">
-                                    <h4 className="text-gray-400">
-                                        Family Details (occupation, members, etc)
-                                    </h4>
-                                    <h4>{profileData?.family_details}</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-full bg-white shadow-m32 py-5 px-3 rounded-md mb-3">
-                            <h2 className="mb-5 text-gray-700 flex items-center justify-start">
-                                Hostel Details
-                                <OfficeBuildingIcon alt={false} myStyle={"h-5 w-5 ml-2"} />
-                            </h2>
-                            <div className="grid grid-cols-2 gap-x-2">
-                                <div className="col-span-1 grid grid-cols-2 border-r border-gray-300">
-                                    <div className="flex items-center justify-between mb-4 col-span-2 mr-3">
-                                        <h4 className="font-bold">If hostel boarder</h4>
-                                    </div>
-
-                                    <div className="flex col-span-2 mb-4 items-start justify-center flex-col">
-                                        <h4 className="text-gray-400">Hostel Name</h4>
-                                        <h4>{profileData?.hostel_name}</h4>
-                                    </div>
-                                    <div className="flex  items-start justify-center mb-2 flex-col">
-                                        <h4 className="text-gray-400">Warden's Name</h4>
-                                        <h4>{profileData?.warden_name}</h4>
-                                    </div>
-                                    <div className="flex items-start justify-center mb-2 flex-col">
-                                        <h4 className="text-gray-400">Asst Warden's Name</h4>
-                                        <h4>{profileData?.asst_warden_name}</h4>
-                                    </div>
-                                    <div className="flex items-start justify-center flex-col">
-                                        <h4 className="text-gray-400">Ph No.</h4>
-                                        <h4>{profileData?.warden_ph_no}</h4>
-                                    </div>
-                                    <div className="flex items-start justify-center flex-col">
-                                        <h4 className="text-gray-400">Ph No.</h4>
-                                        <h4>{profileData?.asst_warden_ph_no}</h4>
-                                    </div>
-                                </div>
-                                <div className="col-span-1 grid grid-cols-1">
-                                    <div className="flex items-center justify-between mb-4 col-span-1">
-                                        <h4 className="font-bold">If not hostel boarder</h4>
-                                    </div>
-                                    <div className="flex col-span-1 mb-4 items-start justify-center flex-col">
-                                        <h4 className="text-gray-400">
-                                            Responsible contact person at residence
-                                        </h4>
-                                        <h4>
-                                            {profileData?.responsible_contact_person_at_residence}
-                                        </h4>
-                                    </div>
-                                    <div className="flex col-span-1 mb-4 items-start justify-center flex-col">
-                                        <h4 className="text-gray-400">
-                                            Contact no. of contact person
-                                        </h4>
-                                        <h4>{profileData?.contact_no_of_contact_person}</h4>
-                                    </div>
-                                    <div className="flex col-span-1 items-start justify-center flex-col">
-                                        <h4 className="text-gray-400">Reidence Address</h4>
-                                        <h4>{profileData?.residence_address}</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-full flex items-center justify-end mt-5">
-                            <button
-                                onClick={handleShowModal}
-                                title="edit"
-                                className="flex items-center justify-between py-3 px-4 rounded-md bg-blue-600 hover:bg-blue-800 transition-colors text-white"
-                            >
-                                <PencilIcon alt={true} myStyle={"h-5 w-5 mr-2"} />
-                                Update Information
-                            </button>
-                        </div>
-                    </div>
+                   
                 </div>
             )}
         </div>

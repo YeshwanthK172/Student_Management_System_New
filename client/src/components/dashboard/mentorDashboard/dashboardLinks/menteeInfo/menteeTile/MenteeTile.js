@@ -43,10 +43,8 @@ const MenteeTile = ({ slno, mentee, history }) => {
                 <div>
                     <h5 className="">{mentee.enrollment_no}</h5>
                 </div>
+                
                 <div className="col-span-2">
-                    <h5>{mentee.address}</h5>
-                </div>
-                <div>
                     <h5>{mentee.department}</h5>
                 </div>
                 <div>
@@ -55,34 +53,10 @@ const MenteeTile = ({ slno, mentee, history }) => {
                 <div>
                     <h5>{mentee.phone_no}</h5>
                 </div>
-                <div className="flex items-center gap-x-20">
-                    <button className="p-2 bg-gray-100 rounded-lg">
-                        <AnnotationIcon alt={true} myStyle={"h-4 w-4"} />
-                    </button>
-                    {showDetails === false ? (
-                        <button
-                            onClick={() => {
-                                setShowDetails(true);
-                                dispatch(
-                                    mentorGetAllMenteeSemesters(history, setSemesters, mentee._id)
-                                );
-                                dispatch(mentorGetAllMentees());
-                            }}
-                            className="p-1 bg-gray-100 rounded-lg"
-                        >
-                            <KeyboardArrowDownIcon fontSize="small" />
-                        </button>
-                    ) : (
-                        <button
-                            onClick={() => setShowDetails(false)}
-                            className="p-1 bg-gray-100 rounded-lg"
-                        >
-                            <KeyboardArrowUpIcon fontSize="small" />
-                        </button>
-                    )}
-                </div>
+                
+               
             </div>
-            {showDetails && <MenteeDetailsTile mentee={mentee} semesters={semesters} />}
+           
         </>
     );
 };

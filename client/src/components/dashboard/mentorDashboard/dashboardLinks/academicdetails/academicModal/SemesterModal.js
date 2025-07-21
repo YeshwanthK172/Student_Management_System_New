@@ -155,12 +155,10 @@ const SemesterModal = ({
                                                 selected={course.type}
                                             >
                                                 <option value="">Select type</option>
-                                                <option value="C">C</option>
-                                                <option value="E">E</option>
-                                                <option value="OE">OE</option>
-                                                <option value="Audit">Audit</option>
-                                                <option value="Minor Project">Minor Project</option>
-                                                <option value="Major Project">Major Project</option>
+                                                <option value="Lab">Lab</option>
+                                                <option value="Theory">Theory</option>
+                                                <option value="T&L">T&L</option>
+                                                
                                             </select>
                                         </div>
                                         <div className="flex justify-between mb-6">
@@ -184,11 +182,8 @@ const SemesterModal = ({
                                                     <option value="B+">B+</option>
                                                     <option value="B">B</option>
                                                     <option value="C">C</option>
-                                                    <option value="D">D</option>
-                                                    <option value="P">P</option>
-                                                    <option value="S">S</option>
-                                                    <option value="F">F</option>
-                                                    <option value="X">X</option>
+                                                    <option value="U">U</option>
+                                               
                                                 </select>
                                             </div>
 

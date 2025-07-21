@@ -60,14 +60,7 @@ const AdminInteractions = () => {
                 >
                     Mentees
                 </button>
-                <button
-                    name="interactions"
-                    onClick={handleSelection}
-                    className={` border-2 border-blue-600 py-2 px-3 w-full rounded-full ${selected === "interactions" ? "bg-blue-600 text-white" : "bg-white"
-                        }`}
-                >
-                    Interactions
-                </button>
+               
             </div>
             <section className="w-full h-9/10 mt-5">
                 {selected === "mentors" && (

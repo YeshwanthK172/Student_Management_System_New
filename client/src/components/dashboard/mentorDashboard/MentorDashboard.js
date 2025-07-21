@@ -630,22 +630,7 @@ const MentorDashboard = () => {
                                     Profile
                                 </button>
                             )}
-                            {role === Roles.ADMIN && (
-                                <button
-                                    onClick={handleRouteChange}
-                                    id="logs"
-                                    className={`${route.logs ? "text-gray-700 bg-gray-100" : "text-gray-400"
-                                        } flex items-center text-left hover:bg-gray-100 mt-5 ml-8 mr-8 pt-3 pb-3 pl-10 rounded-md`}
-                                >
-                                    <DocumentTextIcon
-                                        myStyle={"h-5 w-5 mr-3 pointer-events-none"
-                                            .concat(" ")
-                                            .concat(route.logs && "text-blue-600")}
-                                        alt={true}
-                                    />
-                                    Logs
-                                </button>
-                            )}
+                            
                             <button
                                 onClick={handleLogout}
                                 id="profile"
@@ -685,20 +670,7 @@ const MentorDashboard = () => {
                             <div className="relative w-full h-1/10 bg-white shadow-md flex items-center justify-end">
                                 <div className="flex items-center justify-evenly w-1/5">
                                     <div className="relative">
-                                        <button
-                                            onClick={() => {
-                                                setShowNotificationDropDown(
-                                                    !showNotificationDropDown
-                                                );
-                                            }}
-                                            className="hover:bg-gray-200 transition-all p-2 rounded-full relative"
-                                        >
-                                            <BellIcon
-                                                myStyle={"h-7 w-7 text-blue-600"}
-                                                alt={!showNotificationDropDown}
-                                            />
-                                            <NotificationCounter />
-                                        </button>
+                                        
                                         <CSSTransition
                                             nodeRef={notificationDropDownRef}
                                             in={showNotificationDropDown}
@@ -721,7 +693,7 @@ const MentorDashboard = () => {
                                                 <img
                                                     src={
                                                         adminData?.avatar?.url === ""
-                                                            ? `https://api.dicebear.com/9.x/personas/svg`
+                                                            ? `https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fman-avatar&psig=AOvVaw3A9c_QPUs9DMGGR6byyyTw&ust=1746241943484000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPi2_Kvog40DFQAAAAAdAAAAABAE`
                                                             : adminData?.avatar?.url
                                                     }
                                                     alt="avatar"
