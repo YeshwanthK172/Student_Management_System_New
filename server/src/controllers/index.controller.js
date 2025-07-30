@@ -15,7 +15,7 @@ const cloudinary = require("cloudinary").v2;
 const fs = require("fs");
 const axios = require("axios");
 const emailService = require("../services/email.service");
-
+//index controller
 // env config
 dotenv.config();
 
