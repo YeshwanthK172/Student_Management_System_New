@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
-
+//
 import {
     logoutMentor,
     mentorGetAllMentees,
@@ -71,7 +71,7 @@ const MentorDashboard = () => {
     let uid = "";
     let role = "";
 
-    // getting the socket context from the provider
+    // getting the socket context from the provider user
     const socket = useContext(SocketContext);
 
     // setting the admin auth token
